@@ -1,0 +1,20 @@
+body{
+    background-color: grey;
+
+}
+h1{
+    font-family: Impact;
+    text-align: center;
+}
+h2{
+    font-family: Impact;
+    text-align: center;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    text-indent: 32px;
+}
+span{
+    text-decoration: underline;
+}
