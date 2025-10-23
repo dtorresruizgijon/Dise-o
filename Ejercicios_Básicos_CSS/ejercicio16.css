@@ -1,0 +1,13 @@
+.columns{
+column-count: 7;
+column-gap: 5px;
+}
+.threecolumns{
+column-count: 3;
+column-gap: 5px;
+column-rule: 1px;
+}
+.main{
+background-color: blue;
+size: 100%;
+}
