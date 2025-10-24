@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    border: 2px dashed black;
+    margin: 50px;
+    height: 850px;
+    width: 850px;
+}
+.box{
+    border: 2px solid black;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+
+    line-height: 130px;
+    text-align: center;
+}
+.first{
+    background-color: firebrick;
+    /* Static: el elemento se coloca segun el flujo html ignora top bottom etc */
+    position:static;
+    left: 300px;
+    top: 300px;
+}
+.second{
+    background-color: rgb(0, 255, 85);
+    /* relative: desbloquea left, z-index, etc. El desplazamiento se realiza desde la posicion que le corresponde al elemento segun el flujo html*/
+    position: relative;
+    left: 150px;
+    top: 150px;
+     z-index: 1;
+}
+.third{
+    background-color: rgb(251, 0, 255);
+    /* absolute: el elemento sale del flujo html y tambien el desplazamiento se realiza desde el borde de la ventana del navegador o desde el primer ascendiente que tenga position relative */
+    position: absolute;
+    left: 150px;
+    top: 150px;
+   
+}
+.fourth{
+background-color: blue;
+ position: fixed;
+ /* fixed: activa top borrom left etc y fija el elemento en pantalla e ignora el posible scroll, lo saca del flujo html
+ el desplazamiento se realiza respecto al borde de la ventana del navegador siempre */
+ top:0px;
+ right:0px;
+}
+.fifth{
+    background-color: goldenrod;
+    /*  */
+    position: sticky;
+    top: 10px;
+}

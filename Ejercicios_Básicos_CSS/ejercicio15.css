@@ -1,0 +1,74 @@
+h1{
+    margin-left: 10px;
+    text-align: left;
+    padding: 20px 0;
+    width: 90%;
+}
+.sticky-menu{
+    position: sticky;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    background-color: darkslategrey;
+    padding: 20px;
+    z-index: 100000;
+}
+.menu-element{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-element a {
+    color: white;
+    text-decoration: none;
+}
+.menu-element a:hover{
+    text-decoration: underline;
+}
+.banner{
+    height: 250px;
+    width: 80%;
+    background-color: rgb(150, 240, 235);
+    margin: 20px auto;
+    position: relative;
+}
+.logo{
+    height: 120px;
+    width: 120px;    
+    position: absolute;
+}
+.logo1{
+    background-color: darkolivegreen;
+    z-index:1;
+    left: 50px;
+    top: 50px;
+}
+.logo2{
+    background-color: darkorange;
+    left: 100px;
+    top: 30px;
+}
+.content{
+    background-color: darksalmon;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centered{
+    background-color: lightgreen;
+    text-align: center;
+    height: 150px;
+    width: 50%;
+    line-height: 150px;
+}
+.footer{
+    background-color: darkslategray;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+}
