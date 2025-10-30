@@ -1,0 +1,5 @@
+img{
+    filter: drop-shadow(1px 2px 3px gold);
+    height: 50px;
+    width: 50px;
+}
