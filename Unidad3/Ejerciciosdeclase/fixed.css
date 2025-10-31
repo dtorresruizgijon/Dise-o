@@ -1,0 +1,29 @@
+.container{
+    width: 800px;
+    height: 600px;
+    background-color: aqua;
+    position: relative;
+    margin:0 auto;
+    padding: 20px, 20px, 20px, 20px;
+    
+}
+article{
+    background-color: aquamarine;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    position: relative;
+}
+header{
+    background-color: orange;
+    height: 30px;
+    width: 700px;
+    position: relative;
+}
+article:nth-first-child{
+    float: left;
+}
+article:nth-last-child{
+    float: right;
+}
+

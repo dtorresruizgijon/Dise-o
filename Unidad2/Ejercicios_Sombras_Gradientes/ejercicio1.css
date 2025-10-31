@@ -22,8 +22,14 @@ p{
     width: 50px;
     color: rgb(240, 46, 170);
     box-shadow: 2px 2px 0px 0px rgba(240, 46, 169, 0.8),
-    4px 4px 0px 0px rgb(240, 46, 170, 0.6),
+    4px 4px 0px 0px rgb(240, 46, 169, 0.6),
     6px 6px 0px 0px rgb(240, 46, 169, 0.4),
     8px 8px 0px 0px rgba(240, 46, 169, 0.2),
-    8px 8px 0px 0px rgba(240, 46, 169, 0.1);
+    10px 10px 0px 0px rgba(240, 46, 169, 0.1);
+}
+.title{
+    font-size: 7rem;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, green, blue);
 }
