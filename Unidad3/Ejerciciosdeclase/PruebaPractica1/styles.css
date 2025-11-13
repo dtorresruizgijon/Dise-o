@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    src: url(asset/Lato-Regular.ttf) format(truetype);
+}
+body{
+    display: block;
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+    height: 200%;
+    width: 100%;
+    
+}
+.primeraParte{
+    float: left;
+    background-image: url(asset/fondo2.jpg);
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    padding: 0;
+    align-items: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+.segundaParte{
+   float: left;
+    flex-direction: column;
+    background-image: url(asset/fondo1.jpg);
+   margin-top: 0;
+   width: 100%;
+   height: 100%;
+   max-height: fit-content;
+   background-repeat: no-repeat;
+}
+.contactos{
+border-radius: 10px;
+color:black;
+background-color: white;
+width: 20rem;
+padding: 5px;
+text-align: center;
+}
+.bienvenidos{
+background-color: black;
+color: white;
+font-size: 1rem;
+padding: 2px;
+text-align: center;
+width: fit-content;
+height: fit-content;
+}
+header{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0, 20%);
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+}
+button{
+    padding: 1px;
+
+    background-image: linear-gradient(to right, rgb(91, 91, 249), rgb(0, 0, 134));
+    width: 50%;
+    border: 0;
+    border-radius: 10px;
+
+
+
+}
+section{
+    height: 100%;
+    width: 100%;    
+}
+footer{
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(0, 0, 0, 20%);
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+}
+a{
+    color: white;
+}
+.espacio1{
+    height: 300px;
+}
+.espacio2{
+    height: 300px;
+}
