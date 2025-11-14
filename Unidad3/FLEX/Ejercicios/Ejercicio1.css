@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+    background-color: azure;
+}
+.precontainer{
+    justify-content:center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.container{
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    max-width: 1200px;
+    /* Contenedor flex. Solo lo heredan los hijos */
+    display: flex;
+    flex-wrap: wrap; 
+    /* Alineacion en el eje principal */
+     /* justify-content:center;  */
+     margin-top: 100px;
+     /* align-items: baseline;  */
+    }
+    .item{
+        flex-grow:1;
+    background-color: rgb(83, 144, 144);
+    height: 350px;
+    width: 350px;
+    gap: 20px;
+
+    /* propiedad para los flex items */
+    /*felx-grow*/
+    /* flex-grow: 1; */
+    /*flex-basis >>> tamaño base que depende del eje principal ser altura o anchura */
+    /* gap >> distancia entre ellos, parecido a margin
+    hay row-gap y column-gap
+    */
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}

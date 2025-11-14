@@ -1,0 +1,67 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+
+    border: 2px dashed black;
+    margin: 50px;
+    height: 650px;
+    width: 90%;
+    max-width: 1000px;
+    /* Contenedor flex. Solo lo heredan los hijos */
+    display: flex;
+    flex-wrap: wrap; 
+    /* Alineacion en el eje principal */
+     /* justify-content:center;  */
+     margin-top: 100px;
+     /* align-items: baseline;  */
+    }
+
+.item{
+
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    height: 100px;
+    width: 150px;
+    line-height: 70px;
+    text-align: center;
+
+    /* propiedad para los flex items */
+    /*felx-grow*/
+    /* flex-grow: 1; */
+    flex-basis: 100px
+    /*flex-basis >>> tamaño base que depende del eje principal ser altura o anchura */
+    /* gap >> distancia entre ellos, parecido a margin
+    hay row-gap y column-gap
+    */
+}
+
+.item1{
+
+    background-color: chartreuse;
+    /* flex-grow: 0; */
+}
+.item2{
+
+    background-color: red;
+    /* flex-grow: 2; */
+}
+.item3{
+
+    background-color: cornflowerblue;
+
+}
+.item4{
+
+    background-color: magenta;
+
+}
+/* JERARQUÍA DE ESPACIOS EN CSS */
+/* max-content < width o height < flex-basis*/
