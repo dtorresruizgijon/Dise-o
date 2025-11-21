@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.arriba {
+    background: rgb(57, 57, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.arriba h1 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: white;
+}
+
+.centro {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.imagen {
+    margin-bottom: 30px;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.texto h2 {
+    margin-bottom: 20px;
+}
+
+.oferta {
+    background: #b1f2ff;
+    color: rgb(8, 0, 255);
+    padding: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: rgb(255, 204, 2);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .arriba {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .enlaces {
+        display: none;
+    }
+    
+    .centro {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        min-height: 70vh;
+        text-align: left;
+    }
+    
+    .imagen {
+        order: 2;
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .texto {
+        flex: 1;
+    }
+    
+    .oferta {
+        background: white;
+    }
+    
+    button {
+        background: white;
+        color: rgb(255, 204, 2);
+    }
+}

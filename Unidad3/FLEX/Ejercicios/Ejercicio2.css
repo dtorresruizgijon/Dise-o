@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: #333 url('hamburguesa.jpg') center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    color: white;
+    padding: 20px;
+}
+
+.descuento {
+    background: #ff5722;
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    flex-basis: 50px;
+    align-content: center;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.date, .address {
+    margin-bottom: 10px;
+}
+
+.hashtag {
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.5);
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .hero {
+        padding: 10px;
+    }
+    .descuento{
+        align-self: center;
+    }
+    .hashtag{
+        align-self: center;
+    }
+}
+ /* Contenedor flex. Solo lo heredan los hijos */
+    /* display: flex; */
+    /* flex-wrap: wrap;  */
+    /* Alineacion en el eje principal */
+     /* justify-content:center;  */
+     /* margin-top: 100px; */
+     /* align-items: baseline;  */
