@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-image: linear-gradient(to bottom , rgb(255, 255, 255) 50%, rgb(31, 31, 31)50%);
+width: 100vh;
+height: 100vh;
+background-repeat: no-repeat;
+display:block;
+
+/* justify-content: center;
+    align-items: center;  */
+
+}
+main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+section{
+flex-grow:1;
+    height: 400px;
+    flex-basis: 250px;
+    max-width: 350px;
+    flex-shrink: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+    /* propiedad para los flex items */
+    /*flex-grow*/
+    /* flex-grow: 1; */
+    /*flex-basis >>> tamaño base que depende del eje principal ser altura o anchura */
+    /* gap >> distancia entre ellos, parecido a margin
+    hay row-gap y column-gap
+    */
+}
+
+.card__1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(18, 18, 18);
+    border: 1px;
+    border-radius: 10px;
+    border-color: black;
+
+}
+.card__2{
+    background-color: rgb(55, 129, 247);
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    border-color: black;
+}
+.card__3{
+    background-color: rgb(255, 255, 255);
+    color: rgb(18, 18, 18);
+    border: 1px;
+    border-radius: 10px;
+    border-color: black;
+}
+.card__1__button{
+    margin-top: 50px;
+    height: 50px;
+    width: 140px;
+    border-radius: 90px;
+    color: white;
+    background-color: black;
+    border: 0px;
+}
+.card__2__button{
+    margin-top: 50px;
+    height: 50px;
+    width: 140px;
+    border-radius: 90px;
+    color:  rgb(55, 129, 247);
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+}
+.card__3__button{
+    margin-top: 50px;
+    height: 50px;
+    width: 140px;
+    border-radius: 90px;
+    color: white;
+    background-color: black;
+    border: 0px;
+}
+p{
+    margin: 10px;
+}
