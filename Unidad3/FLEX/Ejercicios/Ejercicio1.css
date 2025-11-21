@@ -26,7 +26,7 @@ body{
     /* Alineacion en el eje principal */
      /* justify-content:center;  */
      margin-top: 100px;
-     /* align-items: baseline;  */
+     /* align-items: baseline; */
     }
     .item{
         flex-grow:1;
