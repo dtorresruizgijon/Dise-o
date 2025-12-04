@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.container{
+    background-color: white;
+    outline: 2px dashed black;
+    height: 600px;
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    /* Generación automática de columnas */
+
+    /* Crea tantas columnas como quepan en el container con anchura de 200px */
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+
+    /* Crea tantas columnas como quepan en el container con anchura mínima de 200px y máxima de 1fr */
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    
+    /* Crea tantas columnas como quepan en el container y  cuantos elementos haya con anchura mínima de 200px y máxima de 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    /*alturas de las filas que se crean automáticamente  */
+    grid-auto-rows: 150px;
+
+    /* GRID AUTOFLOW */
+    /* POR DEFECTO */
+    /* grid-auto-flow: row; */
+    /* LOS ORDENA POR COLUMNAS */
+    /* grid-auto-flow: column; */
+    /* RELLENA TODOS LOS HUECOS POSIBLES */
+    /* grid-auto-flow: dense; */
+
+}
+.item{
+    /* height: 100px; */
+    /* width: 100px; */
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.item1{
+    background-color: chartreuse;
+}
+
+.item2{
+    background-color: skyblue;
+}
+
+.item3{
+    background-color: yellow;
+}
+.item4{
+    background-color: purple;
+}
