@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(100deg, white 65%, rgb(76, 0, 255) 35%);
+    background: linear-gradient(100deg, white 60%, rgb(76, 0, 255) 40%);
     padding-left: 50px;
     padding-right: 50px;
     font-family: sans-serif;
@@ -48,4 +48,5 @@ button{
     color: white;
     border-radius: 5px;
     border-color: rgb(78, 78, 254);
+    font-weight: bold;
 }
