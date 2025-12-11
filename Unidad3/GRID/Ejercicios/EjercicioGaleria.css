@@ -3,6 +3,10 @@
 max-with:100%;
 display: block;
 } */
+ @font-face {
+    font-family: '';
+    src: url('../fuentes/loquesea');
+ }
 
 
 *{
