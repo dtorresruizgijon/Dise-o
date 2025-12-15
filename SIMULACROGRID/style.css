@@ -106,5 +106,8 @@ main{
 }
 .container__img{
     grid-column: 1/3;
+    height: 100%;
     width: 100%;
 }
+
+
