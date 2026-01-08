@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    border: 5px solid black;
+    margin: 100px auto;
+    background-color: darkkhaki;
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 150px);
+}
+.grid-item{
+    background-color: cornflowerblue;
+    grid-column: 2/ span 3;
+    grid-row: 2/4;
+    /* Creamos grid anidado */
+    display: grid;
+}
+.grid-item1{
+    background-color: lemonchiffon;
+}
+.grid-item2{
+    background-color: tomato;
+}
