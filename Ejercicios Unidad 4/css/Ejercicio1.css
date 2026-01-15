@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.transformacion {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.moneda-contenedor {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.moneda {
+    width: 100px;
+    height: 100px;
+}
+
+.translate .moneda {
+    transform: translate(30px, 20px);
+}
+
+.rotate .moneda {
+    transform: rotate(45deg);
+}
+
+.scaleX .moneda {
+    transform: scaleX(1.5);
+}
+
+.scaleY .moneda {
+    transform: scaleY(1.5);
+}
+
+.scale .moneda {
+    transform: scale(1.3);
+}
+
+.skewX .moneda {
+    transform: skewX(20deg);
+}
+
+.skewY .moneda {
+    transform: skewY(20deg);
+}
+
+.skew .moneda {
+    transform: skew(15deg, 10deg);
+}
+
+.codigo {
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 3px;
+}
