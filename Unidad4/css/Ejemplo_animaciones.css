@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+.container{
+    outline: 2px solid darkcyan;
+    margin: 100 auto;
+    height: 600px;
+    width: 800px; padding: 5px;
+}
+.element{
+    margin-top: 20px;
+    background-color: chartreuse;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  */
+    animation-name: color-change;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    
+    animation-delay:1s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* PAUSA LA ANIMACION */
+    /* animation-play-state: paused; */
+}
+
+/* Keyframe */
+@keyframes color-change {
+    from{
+        background-color: burlywood;
+        transform: scale(0);
+    }
+    25%{
+        background-color: cornflowerblue;
+    }
+    50%{
+        background-color: crimson;
+    }
+    75%{
+        background-color: magenta;
+    }
+    to{
+        background-color: greenyellow;
+    transform: scale(1) rotate(1turn);
+    }
+}
+
+
+
