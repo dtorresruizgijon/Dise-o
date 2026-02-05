@@ -1,0 +1,17 @@
+*{
+
+}
+.moto{
+    width: 500px;
+    margin-top:100px ;
+}
+#planta{
+    animation-name: mover-planta;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes mover-planta{
+    to{
+        transform: translateX(-1000px);
+    }
+}

@@ -1,0 +1,32 @@
+.picture__container{
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    transform: translate(0px,0px);
+    grid-column: 1;
+    grid-row: 1;
+    animation-name: cortina;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.picture__img{
+    height: 300px;
+    width: 200px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.picture{
+    width: 284px;
+    display: grid;
+    grid-template-rows: 1;
+    gap: 0;
+    overflow: hidden;
+}
+@keyframes cortina {
+    from{
+    }
+    to{
+        transform: translate(0px, 300px);
+    }
+}

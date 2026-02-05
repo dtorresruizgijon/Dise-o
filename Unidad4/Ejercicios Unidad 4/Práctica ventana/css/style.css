@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+
+}
+.boton{
+    background-color: rgb(83, 83, 255);
+    text-decoration: underline;
+    transform:translateX(500px);
+    width: 100px;
+}
+.pequena{
+overflow: hidden;
+width: 200px;
+height: 300px;
+object-fit: cover;
+}
+.cuadrado{
+    transform:translateX(0px);
+    transition-duration: 1s;
+    position: fixed;
+}
+.cuadrado:target{
+    transform:translateX(-200px);
+    transition-duration: 1s;
+}
+.desactivar{
+    background-color: red;  
+    color: white;
+    text-decoration: none; 
+}
