@@ -1,0 +1,26 @@
+.frase {
+  position: relative; /* Para que los fantasmas no se escapen */
+  font-size: 24px;
+  padding: 0 40px;
+  display: inline-block;
+}
+
+/* El BEFORE (Se coloca al principio, dentro del elemento) */
+.frase::before {
+  content: "“"; /* Texto que queremos añadir */
+  color: red;
+  font-size: 60px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+/* El AFTER (Se coloca al final, dentro del elemento) */
+.frase::after {
+  content: "”"; /* Texto que queremos añadir */
+  color: red;
+  font-size: 60px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
