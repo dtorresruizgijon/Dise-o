@@ -1,0 +1,24 @@
+// Variables 
+$color1: #fe0fea;
+$color2: #caca00;
+$font1: sans-serif;
+$font2: Verdana;
+
+body{
+    font-family: $font2;
+}
+h1{
+    color: $color1;
+    font-family: $font1;
+}
+p{
+    color: $color2;
+}
+/*Prueba de anidacion con sass*/
+main{
+    div{
+        p{
+            background-color: $color1;
+        }
+    }
+}

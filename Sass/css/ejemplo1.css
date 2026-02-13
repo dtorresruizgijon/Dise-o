@@ -1,0 +1,19 @@
+body {
+  font-family: Verdana;
+}
+
+h1 {
+  color: #fe0fea;
+  font-family: sans-serif;
+}
+
+p {
+  color: #caca00;
+}
+
+/*Prueba de anidacion con sass*/
+main div p {
+  background-color: #fe0fea;
+}
+
+/*# sourceMappingURL=ejemplo1.css.map */
