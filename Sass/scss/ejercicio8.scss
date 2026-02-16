@@ -1,0 +1,4 @@
+@for $i from 0 to 9{
+    .color$i{}
+    background-color: $color:"#$i00000";
+}

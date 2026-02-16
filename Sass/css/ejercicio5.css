@@ -1,0 +1,19 @@
+header h1 {
+  color: rgb(224, 46, 255);
+}
+
+main h2 {
+  color: rgb(128, 255, 0);
+}
+
+footer h4 {
+  color: rgb(0, 181, 241);
+}
+footer a {
+  color: rgb(255, 0, 64);
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=ejercicio5.css.map */

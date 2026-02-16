@@ -1,0 +1,19 @@
+@use 'sass:math';
+$ancho: 1200px;
+.mitad{
+    // width: $ancho/2;
+    width: math.div($ancho, 2);
+    background-color:aqua ;
+}
+.cuarto{
+    // width: $ancho/4;
+    width: math.div($ancho, 4);
+    background-color: rgb(255, 144, 9);
+}
+.octavo{
+    // width: $ancho/8;
+    width: math.div($ancho, 8);
+    background-color: blanchedalmond;
+}
+
+

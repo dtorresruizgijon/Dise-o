@@ -1,0 +1,12 @@
+@use 'ejercicio2-vars' as v with(
+    $body-color:limegreen,
+    $h1-color: aqua
+);
+body{
+    background-color: v.$body-color;
+    color: aliceblue;
+}
+h1{
+    color: v.$h1-color;
+    font-size: v.$h1-size;
+}
