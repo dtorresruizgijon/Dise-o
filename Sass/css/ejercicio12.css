@@ -1,0 +1,20 @@
+.btn, .error, .warning, .success {
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.success {
+  background-color: cyan;
+}
+
+.warning {
+  background-color: yellow;
+}
+
+.error {
+  background-color: red;
+}
+
+/*# sourceMappingURL=ejercicio12.css.map */

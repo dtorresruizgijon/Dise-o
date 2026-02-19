@@ -1,17 +1,46 @@
-/* Error: expected "{".
- *   ,
- * 3 |     background-color: $color:"#$i00000";
- *   |                                        ^
- *   '
- *   scss/ejercicio8.scss 3:40  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 3 \2502      background-color: $color:"#$i00000";\a   \2502                                         ^\a   \2575 \a   scss/ejercicio8.scss 3:40  root stylesheet';
+.color0 {
+  background-color: #000000;
+  color: white;
 }
+
+.color1 {
+  background-color: #100000;
+  color: white;
+}
+
+.color2 {
+  background-color: #200000;
+  color: white;
+}
+
+.color3 {
+  background-color: #300000;
+  color: white;
+}
+
+.color4 {
+  background-color: #400000;
+  color: white;
+}
+
+.color5 {
+  background-color: #500000;
+  color: white;
+}
+
+.color6 {
+  background-color: #600000;
+  color: white;
+}
+
+.color7 {
+  background-color: #700000;
+  color: white;
+}
+
+.color8 {
+  background-color: #800000;
+  color: white;
+}
+
+/*# sourceMappingURL=ejercicio8.css.map */

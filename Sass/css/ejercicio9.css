@@ -1,0 +1,17 @@
+header {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  gap: 3;
+  background-color: aqua;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  gap: 3;
+  background-color: royalblue;
+}
+
+/*# sourceMappingURL=ejercicio9.css.map */

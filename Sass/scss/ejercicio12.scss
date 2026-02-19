@@ -1,0 +1,18 @@
+.btn{
+    background-color: white;
+    border-color: black;
+    border-radius: 5px;
+    width: 100%;
+}
+.success{
+    @extend .btn;
+    background-color: cyan;
+}
+.warning{
+    @extend .btn;
+    background-color: yellow;
+}
+.error{
+    @extend .btn;
+    background-color: red;
+}

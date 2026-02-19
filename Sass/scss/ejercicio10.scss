@@ -1,0 +1,10 @@
+$i:2;
+$j:1;
+@while $j<=5 {
+    .ancho-col-#{$j}{
+        width: calc(100/$i)*1%;
+        background-color: cadetblue;
+    }
+    $j:$j+1;
+    $i:$i+2;
+    }
