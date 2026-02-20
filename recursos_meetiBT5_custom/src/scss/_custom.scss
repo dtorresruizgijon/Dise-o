@@ -1,0 +1,21 @@
+$rojo: tomato;
+$verde: aqua;
+$oscuro: rgb(21, 21, 21);
+$gris: rgb(222, 222, 222);
+
+$primary: $rojo;
+$secondary: $verde;
+$dark: $oscuro;
+
+$card-border-color:transparent;
+
+//Tipografías
+$display-font-weight: 900;
+$headings-font-weight:700;
+
+//Nav link
+$nav-link-color: $gris;
+$nav-link-hover-color: color.scale($gris, $lightness: -40%);
+
+
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';

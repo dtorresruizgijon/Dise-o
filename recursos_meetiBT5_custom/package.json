@@ -1,0 +1,24 @@
+{
+  "name": "recursos_meetibt5_custom",
+  "version": "1.0.0",
+  "description": "Proyecto basasdo en bs5 y sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilar:sass": "sass --watch src/scss:build/css",
+    "limpiar:css": "purgecss -css build/css/styles.css --content index.html --output huild/css/styles.min.css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "5",
+    "Sass",
+    "Meeti"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "purgecss": "^8.0.0",
+    "sass": "^1.97.3"
+  }
+}

@@ -1,0 +1,18 @@
+/* Error: There is no module with the namespace "color".
+ *    ,
+ * 18 | $nav-link-hover-color: color.scale($gris, $lightness: -40%);
+ *    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   src/scss/_custom.scss 18:24  @use
+ *   src/scss/styles.scss 1:1     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "color".\a    \2577 \a 18 \2502  $nav-link-hover-color: color.scale($gris, $lightness: -40%);\a    \2502                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/scss/_custom.scss 18:24  @use\a   src/scss/styles.scss 1:1     root stylesheet';
+}
