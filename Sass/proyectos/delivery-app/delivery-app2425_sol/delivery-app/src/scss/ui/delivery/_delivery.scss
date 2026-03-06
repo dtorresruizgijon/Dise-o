@@ -1,0 +1,21 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.delivery{
+    h2{
+        text-align: center
+    }
+    &__grid{
+        @include m.do-grid(1, 4rem);
+        background-color: rgb(255, 255, 255);
+        
+        @include m.tablet{
+            @include m.do-grid(2, 4rem);
+        }
+        
+        margin-bottom: 5rem
+    }
+    &__link{
+        @include m.btn(v.$main-color, white);
+    }
+}

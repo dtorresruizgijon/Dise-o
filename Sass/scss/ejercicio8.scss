@@ -1,7 +1,0 @@
-@use "sass:string";
-@for $i from 0 to 9{
-    .color#{$i}{
-    background-color: string.unquote('#' + '#{$i}'+'00000');
-    color: white;
-    }
-}

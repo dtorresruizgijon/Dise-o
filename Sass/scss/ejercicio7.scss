@@ -1,9 +1,0 @@
-@function partir($size, $n){
-    $resultado: calc($size/$n);
-    @return $resultado;
-}
-.decimo{
-    width: partir(2000, 2) *1px;
-    background-color: aqua;
-    height: 100px;
-}

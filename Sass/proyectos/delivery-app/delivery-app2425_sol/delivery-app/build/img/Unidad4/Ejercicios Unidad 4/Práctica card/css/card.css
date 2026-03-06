@@ -1,0 +1,28 @@
+.picture__container{
+    background-color: rgba(74, 15, 235, 0.7);
+    height: 425px;
+    width: 284px;
+    color: white;
+    transform: translate(284px,425px);
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+}
+.picture__img{
+    height: 425;
+    width: 284px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.picture:hover .picture__container {
+    /* Estado final */
+    transform: translate(0px, 0px) rotate(1turn);
+    transition: 1s;
+}
+.picture{
+    width: 284px;
+    display: grid;
+    grid-template-rows: 1;
+    gap: 0;
+    overflow: hidden;
+}

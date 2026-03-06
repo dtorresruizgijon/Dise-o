@@ -1,0 +1,17 @@
+@use 'sass:list';
+@use 'sass:map';
+$sizes:("xl": 2rem, "m": 1.2rem , "s": 0.8rem);
+$colores: (red, blue, green);
+
+ul{
+    color: list.nth($colores, 1);
+    font-size: map.get($sizes, "xl");
+    ul{
+        color: list.nth($colores, 2);
+    font-size: map.get($sizes, "m");
+        ul{
+            color: list.nth($colores, 3);
+    font-size: map.get($sizes, "s");
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/* El modal ocupa toda la pantalla y está oculto */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 10;
+}
+
+/* Solo se ve cuando el enlace apunta a su ID */
+.modal:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor relativo para que la X se pegue a él */
+.caja {
+  position: relative;
+}
+
+/* La X artesanal */
+.cerrar {
+  position: absolute;
+  top: -30px; /* La subimos para que no tape la foto */
+  right: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.caja img {
+  max-width: 90%;
+  max-height: 80%;
+  display: block;
+}

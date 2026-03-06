@@ -1,0 +1,12 @@
+$ancho:1200px;
+$color:rgb(0, 0, 112);
+$back:rgb(243, 238, 227);
+.contenedor{
+background-color: $back;
+color: $color;
+width: $ancho;
+}
+.contenedor-con-altura{
+@extend .contenedor;
+height: $ancho;
+}

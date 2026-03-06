@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Clip-Path y Pseudo-elementos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* 1. El botón base */
+        .boton-clip {
+            position: relative;
+            padding: 20px 40px;
+            font-size: 20px;
+            color: #ff4757; /* Texto rojo al inicio */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid #ff4757;
+            background: transparent;
+            cursor: pointer;
+            overflow: hidden; /* Para que el "hijo" no se salga de los bordes */
+            transition: color 0.4s;
+            z-index: 1;
+        }
+
+        /* 2. El "Hijo Fantasma" (::before) 
+           Este será el fondo rojo que aparecerá. */
+        .boton-clip::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #ff4757;
+            z-index: -1; /* Lo ponemos detrás del texto */
+
+            /* LAS TIJERAS (clip-path):
+               Creamos un círculo de radio 0% en el centro (invisible). */
+            clip-path: circle(0% at 50% 50%);
+            
+            transition: clip-path 0.5s ease-in-out;
+        }
+
+        /* 3. Animación al pasar el ratón */
+        .boton-clip:hover {
+            color: white; /* Cambiamos el texto a blanco */
+        }
+
+        .boton-clip:hover::before {
+            /* Abrimos las tijeras:
+               El círculo ahora crece hasta el 150% para cubrir todo el botón. */
+            clip-path: circle(150% at 50% 50%);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="boton-clip">¡Magia!</button>
+
+</body>
+</html>

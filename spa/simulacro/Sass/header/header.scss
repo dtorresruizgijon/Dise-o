@@ -1,0 +1,54 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    &__grid{
+        width: 100%;
+        @include m.do-grid(1, 1rem);
+        justify-content: center;
+        align-items: center;       
+        @include m.tablet{
+          @include m.do-grid(2, 5rem);  
+          justify-content: space-between;
+        }
+    }
+    &__logo{
+        margin: 0 auto
+    }
+    &__icons{
+        display: flex;
+        gap: 1rem;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 5rem;
+        }
+    }
+}
+.navbar{
+    font-size: 2.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: v.$principal;
+    &__flex{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        @include m.tablet{
+        flex-direction: row;    
+        }
+         a {
+        color: white;
+        text-decoration: none;
+        flex: 1;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+}

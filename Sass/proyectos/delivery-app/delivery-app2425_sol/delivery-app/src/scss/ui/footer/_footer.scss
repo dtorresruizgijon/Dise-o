@@ -1,0 +1,61 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.footer{
+
+    &__grid{
+        @include m.do-grid(3, 10);
+        width: 100%;
+        height: fit-content;
+        background-color: v.$secondary-color;
+        color: white;
+        padding: 5rem;
+        gap: 1rem;
+        text-align: left;
+        
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+    }
+    &__copyright{
+        background-color: v.$main-color;
+        color: white;
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 1rem;
+
+    }
+    &__text {
+        color: white !important;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__link {
+        color: white !important;
+        text-decoration: none;
+        font-size: 1.6rem;
+    }
+
+    p {
+        color: white !important;
+    }
+
+    a {
+        color: white !important;
+    }
+}

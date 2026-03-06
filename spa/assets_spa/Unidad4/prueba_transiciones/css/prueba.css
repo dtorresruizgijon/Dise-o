@@ -1,0 +1,108 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ @font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Regular.ttf');
+ }
+  .boton{
+    font-family: "Raleway";
+    background-color: rgb(0, 155, 155);
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: min-content;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+.container{
+   font-family: "Raleway";
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.container:target{
+   animation-name: color2;
+   animation-duration: 2s;
+}
+.cerrar {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  font-size: 30px;
+  height: min-content;
+}
+
+.caja{
+  background-color: white;  
+  width: 70%;
+  height: 70%;
+  display: flex;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.aparecer{
+   display: none;
+   position: absolute;
+   background-color: gray;
+}
+.aparecer:target{
+  width: 100%;
+  height: 100%;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+  position: absolute;
+  animation-name: color;
+  animation-duration: 2s;
+}
+.textoyboton{
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+}
+h3{
+   font-size: larger;
+}
+img{
+   width: 40%;
+}
+@keyframes aparecer {
+    from{
+        transform: scale(0);
+    to{
+       
+    transform: scale(1);
+    }
+}
+}
+@keyframes color {
+from{
+clip-path: circle(0% at 100% 0%);
+}
+to{
+   clip-path: circle(100% at 50% 50%);
+   background-color: gray;
+}
+}
+@keyframes color2 {
+from{
+ clip-path: circle(100% at 50% 50%);
+ background-color: gray;
+}
+to{
+   clip-path: circle(0% at 100% 0%);
+   background-color: gray;
+}
+}

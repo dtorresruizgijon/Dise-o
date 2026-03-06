@@ -1,0 +1,27 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+.apps{
+    background-color: v.$grey;
+    &__grid{ 
+        padding: 2rem;
+        @include m.do-grid(1, 3rem); 
+       align-items: center;
+       justify-content: center;
+       @include m.tablet{
+        @include m.do-grid(2, 3rem); 
+       }
+    }
+    &__image{
+        background-color: v.$grey;
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .app-stores{
+        text-align: center;
+        &__grid{
+            @include m.do-grid(2, 1rem);
+        }
+    }
+}

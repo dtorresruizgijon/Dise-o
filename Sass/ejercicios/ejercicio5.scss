@@ -1,0 +1,19 @@
+@use 'sass:list';
+@use 'sass:map';
+$colores: (rgb(224, 46, 255), rgb(128, 255, 0), rgb(0, 181, 241), rgb(255, 0, 64));
+header{
+    h1{
+        color: list.nth($colores, 1);
+}
+}
+main{h2{
+       color: list.nth($colores, 2);}}
+footer{
+    h4{
+             color: list.nth($colores, 3); }
+    a{
+               color: list.nth($colores, 4); 
+        &:hover{
+            text-decoration: none;}
+        }
+}

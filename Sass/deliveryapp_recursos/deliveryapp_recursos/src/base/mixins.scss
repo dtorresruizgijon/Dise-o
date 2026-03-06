@@ -1,6 +1,0 @@
-//CREAR GRID
-@mixin CrearGrid($num-colums, $gap10px){
-display: grid;
-grid-template-columns: repeat(&$num-colums, 1fr);
-gap: $gap;
-}
