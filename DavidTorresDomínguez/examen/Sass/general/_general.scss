@@ -1,0 +1,45 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+body{
+    margin: 0;
+    border: 0;
+    font-family: v.$primaria;
+}
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 5rem;
+    line-height: 6.2rem;
+    font-family: v.$secundaria;
+}
+h2{
+    font-size: 4.6rem;
+    line-height: 5.8rem;
+    font-family: v.$secundaria;
+}
+h3{
+    font-size: 3rem;
+    line-height: 4.2rem;
+    font-family: v.$secundaria;
+}
+p{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+a{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+

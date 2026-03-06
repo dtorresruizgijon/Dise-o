@@ -1,0 +1,44 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+.seguridad{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+    background-color: v.$morado;
+    h2{
+        color: v.$blanco;
+        text-align: center;
+        background-color: v.$morado;
+    }
+       &__grid{
+       @include m.do-grid(1, 5rem);
+       align-items: center;
+       @include m.s{
+          @include m.do-grid(2, 5rem);  
+          justify-content: center;
+        }
+        img{
+            max-width: 30rem ;
+            margin: 0 auto;
+        }
+    }
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+        &__caja{
+        width: 100%;
+        padding: 1rem;
+        background-color: v.$blanco;
+        box-shadow: 0px 0px 0px 1px rgb(0, 0, 0,0.1);
+        transition: 1s;
+        }
+        &__caja:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    }

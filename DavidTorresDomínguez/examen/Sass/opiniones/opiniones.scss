@@ -1,0 +1,44 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+.opiniones{
+     h2{
+        color: v.$blanco;
+        text-align: center;
+        background-color: v.$morado;
+    }
+     margin-top: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: v.$morado;
+    img{
+        width: 2rem;
+    }
+    &__caja{
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: v.$blanco;
+        box-shadow: 0px 0px 0px 1px rgb(0, 0, 0,0.1);
+    }
+    &__grid{
+       @include m.do-grid(1, 5rem);
+       align-items: center;
+       justify-content: center;
+       @include m.s{
+          @include m.do-grid(2, 5rem);  
+          
+        }
+    }
+    &__flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    &__nombre{
+        text-align: end;
+        color: v.$morado;
+        font-style: bold;
+    }
+}

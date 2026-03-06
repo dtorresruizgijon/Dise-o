@@ -1,0 +1,20 @@
+// ### Importación de fuentes
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../assets_nucleus_sass/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins bold';
+    src: url('../../../assets_nucleus_sass/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+// ### Variables de tipografía
+$primaria: 'Poppins', sans-serif;
+$secundaria: 'Poppins bold', sans-serif;
+//Variables de colores
+$blanco: #ffffff;
+$negro: #000000;
+$morado: #6834a6;

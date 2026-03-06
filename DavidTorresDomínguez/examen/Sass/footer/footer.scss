@@ -1,0 +1,35 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+.footer{
+    padding: 1rem;
+    background-color: v.$morado;
+    filter: contrast(1.2);
+    img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+    &__grid{
+        width: 100%;
+        align-items: center;
+       @include m.do-grid(1, 5rem);
+       @include m.s{
+          @include m.do-grid(2, 5rem);  
+          justify-content: space-between;
+          margin-bottom: 5rem;
+        }
+}
+&__navbar{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include m.s{
+            flex-direction: row;
+        }
+        a{
+            text-decoration: none;
+            color: v.$blanco;    
+        }
+    }
+}

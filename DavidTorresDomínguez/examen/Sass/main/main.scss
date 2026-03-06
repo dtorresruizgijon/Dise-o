@@ -1,0 +1,47 @@
+@use '../general/variables' as v;
+@use '../general/mixins' as m;
+.main{
+    h1{
+        text-align: center;
+        color: v.$negro;
+    }
+    h2{
+        text-align: center;
+        color: v.$morado;
+        margin: 0;
+    }
+    h3{
+        text-align: center;
+        color: v.$morado;
+        margin: 0;
+    }
+    &__grid{
+       @include m.do-grid(1, 5rem);
+       align-items: center;
+       @include m.s{
+          @include m.do-grid(2, 5rem);  
+          justify-content: center;
+        }
+        img{
+            max-width: 30rem ;
+            margin: 0 auto;
+        }
+    }
+    &__flex{
+        @include m.s{
+            }
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    &__caja{
+        padding: 2rem;
+        background-color: v.$blanco;
+        box-shadow: 0px 0px 0px 1px rgb(0, 0, 0,0.1);
+    }
+    &__caja:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    margin-bottom: 10rem;
+}

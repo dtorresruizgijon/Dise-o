@@ -1,0 +1,27 @@
+
+@mixin do-grid($num-columns, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($num-columns, 1fr);
+    gap: $gap;
+}
+
+@mixin s {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin m {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+    
+
+}
+
+@mixin l {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+    
+
+}
